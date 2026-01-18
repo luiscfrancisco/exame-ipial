@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/css/candidatos.css">
+  <link rel="stylesheet" href="/src/icon/all.min.css">
+  <link rel="stylesheet" href="/src/icon/fontawesome.css">
+  <title>Gestão-de-Candidatos</title>
+</head>
+<body>
+
+<header>
+  <nav id="desktop-nav">
+    <div class="logo">
+      <a href="/index.html">
+      <img src="/src/assets/img/icon.fundo.jpeg" alt="img" class="logo">
+      </a>
+      <h1>IPIAL</h1>
+    </div>
+    
+    <div>
+      <ul class="nav-links">
+          <li><a href="/index.html"> Início </a></li>
+          <li><a href="/src/html/candidatar.html">Inscrição</a></li>
+          <li><a href="/src/html/consulta.html">Consultar Estado</a></li>
+      </ul>
+    </div>
+
+    <button class="btn-admin" onclick="location.href='/src/html/admin.html'"> Admin </button>
+  </nav>
+    
+  <nav id="hamburger-nav">
+    <div class="logo">
+      <a href="/index.html">
+      <img src="/src/assets/img/icon.fundo.jpeg" alt="img" class="logo">
+      </a>
+      <h1>IPIAL</h1>
+    </div>
+
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+  </nav>
+  
+  <div class="menu-links">
+    <li><a href="/index.html" onclick="toggleMenu()">Início</a></li>
+    <li><a href="/src/html/candidatar.html" onclick="toggleMenu()">Candidatar</a></li>    
+    <li><a href="/src/html/consulta.html" onclick="toggleMenu()">Consultar</a></li>
+    
+    <button class="btn-admin" onclick="location.href='/src/html/admin.html'">Admin</button>
+  </div>
+
+</header><!---Fechamento do header-->
+
+  <form id="formInscricao">
+    <div class="form-container">
+      <img src="/src/assets/img/icon.fundo.jpeg" alt="logo" class="logo_1">
+      <h2>Registo de Candidatos</h2>
+      <p>Preencha atentamente todas as informações solicitadas. Os dados fornecidos serão utilizados exclusivamente para fins de identificação e participação do exame.</p>
+  </div>
+
+    <div class="input">
+      <i class="fa-solid fa-user"></i>
+      <input type="text" id="nome" required placeholder="Digite seu nome completo">
+    </div>
+
+    <div class="input">
+      <i class="fa-solid fa-envelope"></i>
+      <input type="email" id="email" required placeholder="Digite seu email">
+    </div>
+
+    <div class="input">
+      <i class="fa-solid fa-id-card"></i>
+      <input type="text" id="bi" required placeholder="Número do documento">
+    </div>
+
+    <div class="input">
+      <i class="fa-solid fa-calendar"></i>
+      <input type="date" id="idade" required>
+    </div>
+        
+    <div class="input">
+      <i class="fa-solid fa-phone"></i>
+      <input type="tel" id="contacto" required placeholder="+(xxx) xxx - xxx - xxx">
+    </div>
+    
+    <select id="curso" required >
+
+      <option value="#">Cursos Disponíveis</option>
+
+      <option value="Construção Civil">Construção Civil</option>
+
+      <option value="Eletrónica e Telecomunicações">Eletrónica e Telecomunicações</option>
+
+      <option value="Electricidade">Electricidade</option>
+
+      <option value="Informática">Informática</option>
+
+    </select>
+
+    <input type="file" id="ficheiro" required accept=".pdf, application/pdf">
+    <label for="ficheiro" class="file-label"><span>Envie pdf do BI/Passaporte </span></label>
+
+    <button type="submit" class="btn" >Fazer Inscrição</button>
+
+  </form><!---Fechamento do Formulario -->
+
+
+<script src="/src/js/candidatos.js"></script>
+<script src="/src/js/global.js"></script>
+</body>
+</html>

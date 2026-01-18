@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/css/adminConsulta.css">
+  <link rel="stylesheet" href="/src/icon/fontawesome.css">
+  <link rel="stylesheet" href="/src/icon/all.min.css">
+  <title>Candidatos_Inscritos</title>
+</head>
+<body>
+
+<header>
+  <nav id="desktop-nav">
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/src/assets/img/icon.fundo.jpeg" alt="img" class="logo">
+      </a>
+      <h1>IPIAL</h1>
+    </div>
+    
+    <div>
+
+      <ul class="nav-links">
+          <li><a href="/index.html"> Início </a></li>
+          <li><a href="/src/html/candidatar.html">Inscrição</a></li>
+          <li><a href="/src/html/consulta.html">Consultar Estado</a></li>
+          <li>
+      </ul>
+    </div>
+
+      <button class="btn-admin" onclick="location.href='/src/html/admin.html'">Admin </button>
+  </nav>
+    
+  <nav id="hamburger-nav">
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/src/assets/img/icon.fundo.jpeg" alt="img" class="logo">
+      </a>
+      <h1>IPIAL</h1>
+    </div>
+
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+  </nav>
+  
+  <div class="menu-links">
+    <li><a href="/index.html" onclick="toggleMenu()">Início</a></li>
+    <li><a href="/src/html/candidatar.html" onclick="toggleMenu()">Candidatar</a></li>
+    
+    <button class="btn-admin" onclick="location.href='/src/html/admin.html'">Admin</button>
+  </div>
+
+</header><!---Fechamento do header-->
+
+<section id="dashboard" class="view">
+  <div class="admin-header">
+    <h2>Painel de Gestão de Candidatos</h2>
+    <div class="admin-actions">
+      
+      <button class="btn-file" onclick="exportarRelatorio()"><i class="fas fa-file-pdf"></i> Exportar Lista</button>
+
+      <button class="btn-danger" onclick="location.href='/index.html'"><i class="fas fa-sign-out-alt"></i>Sair</button>
+    </div>
+  </div>
+
+  <div class="admin-filters">
+
+    <input type="text" id="filtroNome" placeholder="Filtrar por nome..." onkeyup="renderTable()">
+
+    <select id="filtroCurso" onchange="renderTable()">
+      <option value="">Todos os Cursos</option>
+      <option value="Informática">Informática</option>
+      <option value="Construção Civil">Construção Civil</option>
+      <option value="Eletricidade">Eletricidade</option>
+      <option value="Desenhador Projectista">Desenhador Projectista</option>
+    </select>
+
+    <select id="filtroStatus" onchange="renderTable()">
+      <option value="" >Todos os Estados</option>
+        <option value="Pendente">Pendente</option>
+        <option value="Aprovado">Admitido</option>
+        <option value="Reprovado">Rejeitado</option>
+    </select>
+  </div>
+
+  <div class="table-responsive">
+    <table id="tabelaCandidatos">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>BI</th>
+          <th>Curso</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+      <!-- Vai Ser Gerado Pelo JavaScrip -->
+      </tbody>
+    </table>
+
+</section>
+
+  <script src="/src/js/dashboard.js"></script>
+  <script src="/src/js/global.js"></script>
+
+</body>
+</html>

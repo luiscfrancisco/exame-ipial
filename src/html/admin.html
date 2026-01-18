@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/css/admin.css">
+  <link rel="stylesheet" href="/src/icon/all.min.css">
+  <link rel="stylesheet" href="/src/icon/fontawesome.css">
+  <title>Acesso_Restrito</title>
+</head>
+<body>
+
+<header>
+  <nav id="desktop-nav">
+    <div class="logo">
+      <a href="sistema.html">
+        <img src="/src/assets/img/icon.fundo.jpeg" alt="img" class="logo">
+      </a>
+      <h1>IPIAL</h1>
+    </div>
+    
+    <div>
+
+      <ul class="nav-links">
+          <li><a href="/index.html"> Início </a></li>
+          <li><a href="/src/html/candidatar.html">Inscrição</a></li>
+          <li><a href="/src/html/consulta.html">Consultar Estado</a></li>
+          <li>
+      </ul>
+    </div>
+
+      <button class="btn-admin" onclick="location.href='/src/html/admin.html'">Admin </button>
+  </nav>
+    
+  <nav id="hamburger-nav">
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/src/assets/img/icon.fundo.jpeg" alt="img" class="logo">
+      </a>
+      <h1>IPIAL</h1>
+    </div>
+
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+  </nav>
+  
+  <div class="menu-links">
+    <li><a href="/index.html" onclick="toggleMenu()">Início</a></li>
+    <li><a href="/src/html/candidatar.html" onclick="toggleMenu()">Candidatar</a></li>    
+    <li><a href="/src/html/consulta.html" onclick="toggleMenu()">Consultar</a></li>
+    
+    <button class="btn-admin" onclick="location.href='/src/html/admin.html'">Admin</button>
+  </div>
+
+</header><!---Fechamento do header-->
+    <form id="formLogin">
+      <div class="form-container">
+        <img src="/src/assets/img/icon.fundo.jpeg" alt="logo" class="logo_1">
+        <h2>Painel de Administrador</h2>
+        <p>Informe seu nome e senha para acessar o painel administrativo. Este ambiente é restrito e protegido para garantir a segurança do sistema e dos dados.</p>
+
+        <div class="input">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" id="nome" required placeholder="Usuário_administrador">
+        </div>
+
+        <div class="input">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" id="password" required placeholder="Senha de administrador">
+         </div>
+      </div>
+
+      <button type="submit" class="btn primary full">
+        Entrar
+      </button>
+      <div class="credenciais">
+        <h3>Credenciais de Acesso:</h3>
+        <p><span>Passe: </span>Luis_Dev <span>Senha: </span>010101</p>
+      </div>
+    </form>
+
+
+<script src="/src/js/admin.js"></script>
+<script src="/src/js/global.js"></script>
+</body>
+</html>

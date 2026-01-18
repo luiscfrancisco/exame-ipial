@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/css/consulta.css">
+  <link rel="stylesheet" href="/src/icon/all.min.css">
+  <link rel="stylesheet" href="/src/icon/fontawesome.css">
+  <title>Consulta_Estado</title>
+</head>
+<body>
+
+<header>
+  <nav id="desktop-nav">
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/src/assets/img/icon.fundo.jpeg" alt="img" class="logo">
+      </a>
+      <h1>IPIAL</h1>
+    </div>
+    
+    <div>
+
+      <ul class="nav-links">
+          <li><a href="/index.html"> Início </a></li>
+          <li><a href="/src/html/candidatar.html">Inscrição</a></li>
+          <li><a href="/src/html/consulta.html">Consultar Estado</a></li>
+          <li>
+      </ul>
+    </div>
+
+      <button class="btn-admin" onclick="location.href='/src/html/admin.html'">Admin </button>
+  </nav>
+    
+  <nav id="hamburger-nav">
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/src/assets/img/icon.fundo.jpeg" alt="img" class="logo">
+      </a>
+      <h1>IPIAL</h1>
+    </div>
+
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+  </nav>
+  
+  <div class="menu-links">
+    <li><a href="/index.html" onclick="toggleMenu()">Início</a></li>
+
+    <li><a href="/src/html/candidatar.html" onclick="toggleMenu()">Candidatar</a></li>
+    
+    <button class="btn-admin" onclick="location.href='/src/html/admin.html'">Admin</button>
+  </div>
+
+</header><!---Fechamento do header-->
+
+<section id="consulta">
+  <div class="status-container">
+    <h2>Consultar Admissão</h2>
+    <p>Introduza o seu BI para saber se foi admitido.</p>
+    <div class="search-box">
+      <input type="text" id="searchBI" placeholder="Número do BI">
+      <button onclick="buscarCandidato()">Pesquisar</button>
+    </div>
+    <div id="resultadoConsulta" class="result-card hidden">
+                  
+    </div> <!--Conteúdo gerado no JavasScript-->
+  </div>
+</section><!--Consulta-->
+
+<script src="/src/js/consulta.js"></script>
+<script src="/src/js/global.js"></script>
+
+</body>
+</html>

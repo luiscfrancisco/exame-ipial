@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/css/index.css">
+  <link rel="stylesheet" href="src/icon/all.min.css">
+  <link rel="stylesheet" href="src/icon/fontawesome.css">
+  <title>Sistema_Exame</title>
+</head>
+<body>
+
+<header>
+  <nav id="desktop-nav">
+    <div class="logo">
+      <a href="index.html">
+        <img src="src/assets/img/icon.fundo.jpeg" alt="img" class="logo">
+      </a>
+      <h1>IPIAL</h1>
+    </div>
+    
+    <div>
+
+      <ul class="nav-links">
+          <li><a href="#home"> Início </a></li>
+          <li><a href="#section-escola">Sobre</a></li>
+          <li><a href="#section-curso">Cursos</a></li>
+          <li><a href="src/html/candidatar.html">Inscrição</a></li>
+          <li><a href="src/html/consulta.html">Consultar Estado</a></li>
+      </ul>
+    </div>
+
+      <button class="btn-admin" onclick="location.href='src/html/admin.html'"> Admin </button>
+  </nav>
+    
+  <nav id="hamburger-nav">
+    <div class="logo">
+      <a href="sistema.html">
+        <img src="src/assets/img/icon.fundo.jpeg" alt="img" class="logo">
+      </a>
+      <h1>IPIAL</h1>
+    </div>
+
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+  </nav>
+  
+  <div class="menu-links">
+    <li><a href="index.html" onclick="toggleMenu()">Início</a></li>
+    <li><a href="src/html/candidatar.html" onclick="toggleMenu()">Candidatar</a></li>
+    <li><a href="src/html/consulta.html" onclick="toggleMenu()">Consultar</a></li>
+    <button class="btn-admin" onclick="location.href='src/html/admin.html'">Admin</button>
+  </div>
+
+</header><!---Fechamento do header-->
+
+<main>
+
+<section id="home" style="background-image: url(src/assets/img/imagem-ipial-sobre.jpg);">  
+  <div class="section__text">
+    <h1 class="title_1">Exame De Acesso Para O Instituto Politécnico Industrial Alda Lara</h1>
+    <p class="paragrafo">
+      A nossa escola realiza o processo de admissão de forma presencial, com inscrição inicial realizada através do sistema para assegurar a vaga do candidato. Após a análise e validação pela Administração, os  candidatos aprovados serão convocados para a realização do exame presencial, etapa fundamental para o ingresso na instituição. 
+    </p>
+    <button class="btn_2" onclick="location.href='/src/html/candidatar.html'">
+      Comece a Sua Jornada
+    </button>
+</section><!--Loanding Page-->
+
+<section id="section-escola">
+  <h1>Instituto Politécnico Industrial Alda Lara - IPIAL</h1>
+  <p>
+    <strong>O Instituto Politécnico Alda Lara</strong> é uma escola de ensino médio-técnico
+    angolana, localizada no municipio de Ingombota, na província de Luanda.
+    <br>A escola dedica-se a ensinar e instruir jovens para que sejam
+    técnicos e profisionais de alta qualidade, com foco na inovação e no desenvolvimento contínuo de
+    nossos alunos.
+  </p>
+
+  <p>A escola se destaca por seu compromisso com a formação técnica e profissional de
+  qualidade, preparando os estudantes para enfrentar os desafios do mercado de trabalho e contribuir
+  para o desenvolvimento social e econômico do país. Oferecendo cursos diversificados nas áreas
+  técnicas, científicas e humanísticas, o instituto busca equipar os alunos com habilidades práticas e
+  conhecimentos teóricos sólidos.</p>
+  
+  <p>O nome <strong>Alda Lara</strong> é uma homenagem referida a escritora angolana Alda Ferreira Pires
+  Barreto de Lara Albuquerque que também
+  foi uma das grandes
+  ativistas pela independência do país. É uma da maiores escolas do País.</p>
+
+  <h2>- Foco no Desenvolvimento do Aluno</h2>
+  <p>
+  A metodologia de ensino é voltada para a aplicação prática do conhecimento, ajudando os alunos a
+  desenvolver habilidades que atendam às demandas do setor produtivo.
+  <br/>Esses aspectos fazem do Instituto Politécnico Alda Lara uma referência em educação técnica em
+  Angola.
+  </p>
+  <h2>- Como funciona o exame</h2>
+  <p>O exame é realizado através do nosso sistema digital, com critérios claros e padronizados para avaliar os conhecimentos essenciais do candidato.</p>
+
+</section><!--Historial-->
+
+<section class="exame-section">
+    <div class="exame-grid">
+      <div class="exame-card">
+        <i class="fa-solid fa-user-check"></i>
+        <h3>Inscrição Online</h3>
+        <p>
+          O candidato realiza a inscrição no sistema para assegurar a sua vaga no processo selectivo da escola.
+        </p>
+      </div>
+      <div class="exame-card">
+        <i class="fa-solid fa-clipboard-list"></i>
+        <h3>Análise Administrativa</h3>
+        <p>
+          A administração avalia os dados submetidos e confirma se o candidato está apto para avançar o processo.
+        </p>
+      </div>
+      <div class="exame-card">
+        <i class="fa-solid fa-building-columns"></i>
+        <h3>Exame Presencial</h3>
+        <p>
+           Após aprovação administrativa, o candidato realiza o exame presencial.
+        </p>
+      </div>
+    </div>
+</section><!--sobre o exame-->
+
+<section id="section-curso" >    
+  <div>
+    <h2 class="section-title">Cursos Disponíveis </h2>
+    <div class="courses-grid">
+      <div class="course-card">
+        <img src="src/assets/img/infor-3.JPG" alt="Informática">
+        <div class="course-info">
+          <h3>Informática</h3>
+          <p>Desenvolvimento de software, redes e gestão de sistemas informáticos.</p>
+          <button class="btn" onclick="location.href='src/html/candidatar.html'">
+            Candidatar
+          </button>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <img src="src/assets/img/dt-png.JPG" alt="Construção Civil">
+        <div class="course-info">
+          <h3>Construção Civil</h3>
+          <p>Planeamento, desenho e execução de obras de engenharia.</p>
+          <button class="btn" onclick="location.href='src/html/candidatar.html'">
+            Candidatar
+          </button>
+
+        </div>
+      </div>
+
+      <div class="course-card">
+        <img src="src/assets/img/eletrecidade-3.JPG" alt="Eletricidade">
+        <div class="course-info">
+          <h3>Eletricidade</h3>
+          <p>Instalações elétricas industriais e manutenção de sistemas.</p>
+          <button class="btn" onclick="location.href='src/html/candidatar.html'">
+            Candidatar
+          </button>
+
+        </div>
+      </div>
+
+      <div class="course-card">
+        <img src="src/assets/img/eletronica.png.JPG" alt="Desenhador Projectista">
+        <div class="course-info">
+          <h3>Eletrónica e Telecomunicações</h3>
+          <p>Criação de projetos técnicos e modelagem arquitetónica.</p>
+          <button class="btn" onclick="location.href='src/html/candidatar.html'">
+            Candidatar
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div> <!--Fechamento Dos cards-->
+</section><!--Cursos-->
+
+</main>
+
+<footer>
+  <div class="footer-container">
+  <div class="footer-content ">
+    <h1>Siga-nos</h1>
+    <div class="icones">
+      <a href="#"><img src="src/assets/img/whatzapp-icon.png" alt="whatzapp-icon" /></a>
+
+      <a href="#"><img src="src/assets/img/facebook-icon.png" alt="facebook-icon" /></a>
+
+      <a href="#"><img src="src/assets/img/linkedlin-icon.png" alt="linkedlin-icon"/> </a>      
+    </div>
+  </div>
+
+  <div class="footer-content">
+    <h1>Detalhes</h1>
+    <ul>
+      <li><a href="#home"> Início </a></li>
+      <li><a href="#section-escola">Sobre</a></li>
+      <li><a href="#section-curso">Cursos</a></li>
+      <li><a href="src/html/candidatar.html">Inscrição</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-content ">
+    <h1>Contacto</h1>
+    <div class="footer-social">
+      <img src="src/assets/img/location-icon-2.png" alt="location-icon" width="16px" />
+      <p>Angola Luanda, Maianga</p>
+      <img src="src/assets/img/phone-caling-icon.png" alt="phone-icon" width="20px" />
+      <p>(+244) 955 640 338</p>
+      <img src="src/assets/img/email-icon.png" alt="email-icon" width="24px" />
+      <p>geral_ipial@aldalara.com</p>
+      <P class="p-reservado">&copy; IPIAL - Todos Direitos Reservados.</P>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<script src="src/js/index.js"></script>
+</body>
+</html>
